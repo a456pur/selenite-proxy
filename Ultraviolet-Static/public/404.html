@@ -6,49 +6,110 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
     />
-    <title>Ultraviolet | Error</title>
+    <title>404 | Selenite x Ultraviolet</title>
     <meta
       name="description"
       content="Ultraviolet is a highly sophisticated proxy used for evading internet censorship or accessing websites in a controlled sandbox using the power of service-workers. Unblock sites today!"
+    />
+    <meta
+      name="keywords"
+      content="proxy, web proxy, ultraviolet, service workers, unblock websites, unblock chromebook, free web proxy, proxy list, proxy sites, un block chromebook, online proxy, proxy server, proxysite, proxy youtube, bypass securly, bypass iboss, bypass lightspeed filter, holy unblocker, chromebooks, titanium network, unblock youtube, youtube proxy, unblocked youtube, youtube unblocked"
     />
     <meta
       name="theme-color"
       media="(prefers-color-scheme: dark)"
       content="#434c5e"
     />
-    <meta name="googlebot" content="noindex, nofollow, nosnippet" />
-    <base href="/" />
+    <meta name="googlebot" content="index, follow, snippet" />
     <link rel="shortcut icon" content="favicon.ico" />
     <link rel="stylesheet" href="index.css" />
+    <script src="uv/uv.bundle.js" defer></script>
+    <script src="uv/uv.config.js" defer></script>
+    <script src="register-sw.js" defer></script>
+    <script src="search.js" defer></script>
+    <script src="index.js" defer></script>
+    <script src="themes.js" defer></script>
+    <script src="blank.js" defer></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is Ultraviolet (Web Proxy)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Highly sophisticated proxy used for evading internet censorship or accessing websites in a controlled sandbox using the power of service-workers and more!"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I unblock sites using Ultraviolet?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Simply head to an official site featuring Ultraviolet such as Holy Unblocker or Incognito! You can also self-host Ultraviolet on your own web server for maximum privacy."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What if Ultraviolet is blocked or not working?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Join the Titanium Network Discord at discord.gg/unblock!"
+            }
+          }
+        ]
+      }
+    </script>
   </head>
 
-  <body>
+  <body class="noscroll">
+    <header class="noscroll">
+      <a href="index.html">Home</a>
+      <a href="settings.html">Settings</a>
+      <a href="https://discord.gg/7jyufnwJNf">Selenite Discord</a>
+      <a id="openBlankLink">Open Blank</a>
+    </header>
     <main id="main" class="noscroll">
-    <div class="logo-wrapper left-margin">
-      <h1>Ultraviolet | Error</h1>
-    </div>
-    <div class="desc left-margin">
-      <p>The server could not route your request.</p>
-      <p id="uv-error"></p>
-      <code id="uv-error-code"></code>
-      <button id="uv-register-sw" value="Register service worker">
-        Register ServiceWorker
-      </button>
-    </div>
-    <footer class="noscroll">
-      <a
-        title="License information"
-        href="credits.html"
-        style="margin-left: auto"
-        >Credits</a
-      >
-      <span>Ultraviolet &copy; TN 2022</span>
+      <div class="logo-wrapper left-margin">
+        <h1>ultraviolet error</h1>
+      </div>
+      <div class="desc left-margin">
+        <p>the server could not route your request :/</p>
+        <p>(sometimes waiting a couple of seconds, or refreshing the page helps fix this issue!)</p>
+        <p id="uv-error"></p>
+        <code id="uv-error-code"></code>
+        <button id="uv-register-sw" value="Register service worker">
+          register serviceworker
+        </button>
+      </div>
     </main>
+    <footer class="noscroll">
+      <div>
+        <a
+          title="The TitaniumNetwork GitHub organization"
+          href="https://github.com/titaniumnetwork-dev"
+          >TitaniumNetwork</a
+        >
+        <a title="The TitaniumNetwork Discord" href="https://discord.gg/unblock"
+          >Discord</a
+        >
+        <a
+          title="The TompHTTP GitHub organization"
+          href="https://github.com/tomphttp"
+          >TompHTTP</a
+        >
+        <a
+          title="The official deployment repository for Ultraviolet"
+          href="https://github.com/titaniumnetwork-dev/Ultraviolet-App"
+          >GitHub</a
+        >
+        <a title="License information" href="credits.html">Credits</a>
+      </div>
+      <div>
+        <span>Ultraviolet &copy; TN 2024</span>
+      </div>
     </footer>
-    <script src="uv/uv.bundle.js"></script>
-    <script src="uv/uv.config.js"></script>
-    <script src="register-sw.js"></script>
-    <script src="error.js"></script>
-    <script src="themes.js" defer></script>
   </body>
 </html>
